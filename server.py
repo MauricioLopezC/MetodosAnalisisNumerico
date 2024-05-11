@@ -11,7 +11,7 @@ app = Flask(__name__)
 CORS(app) #para que el servidor de dasarrollo de react se comumique con el servidor de desarollo de flask
 @app.route("/")
 def hello_world():
-    return "Hola nacho"
+    return "Hola Flask"
 
 
 @app.route("/gauss_jordan", methods=['POST'])
