@@ -22,7 +22,7 @@ def gauss_jordanv2(matriz: list[list[float]]) -> None:
             if (divisor != 0):
                 matriz[e][j] = matriz[e][j] / divisor #normalizamos fila e
             else:
-                print("valio madre")
+                print("Error: Division entre cero")
 
         #reducimos las otras columnas en la posicion e
         for i in range(filas):
@@ -45,6 +45,7 @@ def obtener_col(matriz:list[list[float]]):
     return columna 
 
 if __name__ == "__main__":
+    #estas son solo pruebas, para usar el metodo importar la funcion gauss_jordanv2 
     # ejemplo con una solucion (x,y,z)
     matriz = [
             [0, 3, 6, 1],
